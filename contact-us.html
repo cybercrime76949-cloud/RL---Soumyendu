@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact us instantly through WhatsApp for support, projects, and collaboration.">
+    <meta name="keywords" content="contact, whatsapp, support, collaboration">
+    <meta name="author" content="Your Company Name">
+    <title>Contact Us - Get in Touch Instantly</title>
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&family=Playfair+Display:wght@600;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="contact-style.css">
+</head>
+<body>
+    <!-- Animated Background Particles -->
+    <div class="particles-container" id="particlesContainer"></div>
+    
+    <!-- Floating Background Elements -->
+    <div class="floating-blob blob-1"></div>
+    <div class="floating-blob blob-2"></div>
+    <div class="floating-blob blob-3"></div>
+    
+    <!-- Main Container -->
+    <main class="container">
+        <!-- Hero Section -->
+        <section class="hero-section">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-title">
+                        <span class="typing-text">Contact Us Instantly</span>
+                    </h1>
+                    <p class="hero-subtitle">
+                        Connect with us directly through WhatsApp for support, projects, and collaboration.
+                    </p>
+                </div>
+                
+                <!-- Animated WhatsApp Icon -->
+                <div class="whatsapp-icon-hero">
+                    <i class="fab fa-whatsapp"></i>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Card Section -->
+        <section class="contact-section">
+            <div class="contact-card glass-effect">
+                <h2 class="contact-title">Send Us a Message</h2>
+                <p class="contact-subtitle">Fill in your details and we'll connect with you on WhatsApp</p>
+                
+                <form class="contact-form" id="contactForm">
+                    <!-- Name Input -->
+                    <div class="form-group">
+                        <label for="name" class="form-label">Your Name</label>
+                        <input 
+                            type="text" 
+                            id="name" 
+                            class="form-input" 
+                            placeholder="Enter your full name"
+                            required
+                        >
+                        <div class="input-border"></div>
+                    </div>
+
+                    <!-- Email Input -->
+                    <div class="form-group">
+                        <label for="email" class="form-label">Email Address</label>
+                        <input 
+                            type="email" 
+                            id="email" 
+                            class="form-input" 
+                            placeholder="your.email@example.com"
+                            required
+                        >
+                        <div class="input-border"></div>
+                    </div>
+
+                    <!-- Message Textarea -->
+                    <div class="form-group">
+                        <label for="message" class="form-label">Your Message</label>
+                        <textarea 
+                            id="message" 
+                            class="form-input form-textarea" 
+                            placeholder="Tell us about your project or inquiry..."
+                            rows="5"
+                            required
+                        ></textarea>
+                        <div class="input-border"></div>
+                    </div>
+
+                    <!-- WhatsApp Button -->
+                    <button type="button" class="whatsapp-btn" id="whatsappBtn">
+                        <i class="fab fa-whatsapp"></i>
+                        <span class="btn-text">Chat on WhatsApp</span>
+                        <div class="button-glow"></div>
+                    </button>
+                </form>
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section class="features-section">
+            <h2 class="section-title">Why Contact Us?</h2>
+            <div class="features-grid">
+                <div class="feature-card glass-effect">
+                    <div class="feature-icon">
+                        <i class="fas fa-bolt"></i>
+                    </div>
+                    <h3>Lightning Fast</h3>
+                    <p>Get instant responses to your inquiries</p>
+                </div>
+
+                <div class="feature-card glass-effect">
+                    <div class="feature-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Secure & Private</h3>
+                    <p>Your data is protected and encrypted</p>
+                </div>
+
+                <div class="feature-card glass-effect">
+                    <div class="feature-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3>Expert Support</h3>
+                    <p>Connect with our professional team</p>
+                </div>
+
+                <div class="feature-card glass-effect">
+                    <div class="feature-icon">
+                        <i class="fas fa-check-circle"></i>
+                    </div>
+                    <h3>24/7 Available</h3>
+                    <p>Reach us anytime, anywhere</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Floating WhatsApp Button -->
+    <div class="floating-whatsapp" id="floatingWhatsapp">
+        <a href="https://wa.me/917029709096?text=Hello%2C%20I%20want%20to%20contact%20you%20through%20your%20website." target="_blank" rel="noopener noreferrer">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+        <span class="floating-tooltip">Chat on WhatsApp</span>
+    </div>
+
+    <!-- Toast Notification -->
+    <div class="toast" id="toast">
+        <i class="fas fa-spinner fa-spin"></i>
+        <span id="toastMessage">Redirecting to WhatsApp...</span>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>Connect With Us</h4>
+                <div class="social-links">
+                    <a href="#" class="social-icon" title="Facebook">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="#" class="social-icon" title="Twitter">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="#" class="social-icon" title="LinkedIn">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="https://wa.me/917029709096" class="social-icon" title="WhatsApp" target="_blank" rel="noopener noreferrer">
+                        <i class="fab fa-whatsapp"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="footer-divider"></div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Your Company. All rights reserved.</p>
+                <p>Made with <span class="heart">❤️</span> by Your Team</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Main JavaScript -->
+    <script src="contact-script.js"></script>
+</body>
+</html>
